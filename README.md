@@ -15,14 +15,23 @@
 ---
 
 
----
+## 🛠️ How It Works
+#### Content Script (content.js):
+- Scans the page for links to "Terms of Service" or "Privacy Policy."
+- Sends these links to the Flask server for analysis.
+#### Flask Server (server/app.py):
+- Fetches the content of the links provided by the content script.
+- Passes the content back to the extension for keyword analysis.
+#### Background Script (background.js):
+- Analyzes the fetched content for keywords like "data sharing" or "third parties."
+- Displays a notification if any risks are identified.
+#### Popup (popup.html, popup.js, popup.css):
+- Displays a summary of the analysis (optional for manual checks).
 
-## 🚀 How to Use PrivacyGuard
+## 👨‍💻 Contributing
 
-### Step 1: Clone the Repository
+### If you'd like to contribute to PrivacyGuard:
 
-Start by cloning this repository to your local machine:
-
-```bash
-git clone https://github.com/Raghav22222/PrivacyGuard.git
-cd PrivacyGuard
+- Fork the repository.
+- Create a new branch for your changes.
+- Submit a pull request with a detailed description of your work.
