@@ -28,6 +28,28 @@
 #### Popup (popup.html, popup.js, popup.css):
 - Displays a summary of the analysis (optional for manual checks).
 
+
+## 🚀 How to Use PrivacyGuard
+
+1. **Clone the Repository:**
+   - Clone the repository from GitHub to your local machine.
+
+2. **Set up the Flask Server:**
+   - Go to the `server/` directory.
+   - Install Python dependencies by running `pip install -r requirements.txt` in the command line.
+
+3. **Run the Flask Server:**
+   - Start the Flask server by running `python app.py` in the command line. This will begin handling requests to fetch external links.
+
+4. **Install the Chrome Extension:**
+   - Open Chrome and go to `chrome://extensions/`.
+   - Enable "Developer mode" at the top-right corner.
+   - Click on "Load unpacked" and select the `extension/` folder from the cloned repository.
+
+5. **Start Browsing:**
+   - Once the extension is installed, it will automatically scan websites as you browse.
+   - The extension will notify you if it detects any privacy-related links or risks.
+
 ## 👨‍💻 Contributing
 
 ### If you'd like to contribute to PrivacyGuard:
